@@ -12,7 +12,6 @@ class Heroku_Matchmaking:
         self.config = load_config()
         self.api = API(self.config['token'])
         self.game_count = Game_Counter(self.config['challenge'].get('concurrency', 1))
-        self.variant = Variant(self.config['matchmaking']['variant'])
 
     def start(self) -> None:
         print(LOGO)
@@ -23,10 +22,10 @@ class Heroku_Matchmaking:
 
         print('Starting matchmaking ...')
 
-        self.matchmaking = Matchmaking(self.config, self.api, self.variant)
+        self.matchmaking = Matchmaking(self.config, self.api, Variant.STANDARD)
         self.matchmaking.start()
 
 
 if __name__ == '__main__':
-    heroku = Heroku_Matchmaking()
-    heroku.start()
+    hm = Heroku_Matchmaking()
+    hm.start()
