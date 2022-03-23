@@ -43,19 +43,19 @@ engine:                                   # Engine settings.
     Move Overhead: 100                    # Increase if your bot flags games too often.
     Threads: 3                            # Max CPU threads the engine can use.
     Hash: 128                             # Max memory (in megabytes) the engine can allocate.
-    MultiPV: 10
+    MultiPV: 7
     Skill Level: 20
     UCI_Elo : 2850
-    Slow Mover: 70
+    Slow Mover: 100
     
 #move_overhead_multiplier: 3.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
-  min_increment: 0                        # Minimum amount of increment to accept a challenge.
-  max_increment: 0                        # Maximum amount of increment to accept a challenge.
+  min_increment: 1                        # Minimum amount of increment to accept a challenge.
+  max_increment: 180                      # Maximum amount of increment to accept a challenge.
   min_initial: 30                         # Minimum amount of initial time to accept a challenge.
-  max_initial: 30                         # Maximum amount of initial time to accept a challenge.
+  max_initial: 1000                         # Maximum amount of initial time to accept a challenge.
   variants:                               # Chess variants to accept (https://lichess.org/variant).
     - standard
     - chess960
