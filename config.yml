@@ -3,13 +3,6 @@ token: "lip_EXDoji9ulOKovlzkxo2J"         # Lichess OAuth2 Token.
 engine:                                   # Engine settings.
   dir: "./engines"               # Directory containing the engine.
   name: "stockfish"        # Binary name of the engine to use.
-  Atomic: "multivariant_stockfish"  # Binary name of the engine for atomic variant to use.
-  Antichess: "multivariant_stockfish"  # Binary name of the engine for antichess variant to use.
-  Crazyhouse: "multivariant_stockfish"  # Binary name of the engine for crazyhouse variant to use.
-  Horde: "multivariant_stockfish"   # Binary name of the engine for horde variant to use.
-  King of the Hill: "multivariant_stockfish"   # Binary name of the engine for koth variant to use.
-  Racing Kings: "multivariant_stockfish"  # Binary name of the engine for racing kings variant to use.
-  Three-check: "multivariant_stockfish"   # Binary name of the engine for three check variant to use.
   ponder: true                            # Think on opponent's time.
   polyglot:
     enabled: true                         # Activate polyglot book.
@@ -54,7 +47,7 @@ engine:                                   # Engine settings.
     Skill Level: 20
     UCI_Elo : 2850
     
- move_overhead_multiplier: 3.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 3.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
