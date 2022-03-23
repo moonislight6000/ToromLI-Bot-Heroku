@@ -5,11 +5,11 @@ engine:                                   # Engine settings.
   name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   polyglot:
-    enabled: false                         # Activate polyglot book.
+    enabled: true                         # Activate polyglot book.
     books:
       white: null                         # Name of the book to use as white.
       black: null                         # Name of the book to use as black.
-      standard: "lichess_torombot_2022-03-04"             # Name of the book to use if there is no specific book for white, black or chess960.
+      standard: "lichess-book"             # Name of the book to use if there is no specific book for white, black or chess960.
       chess960: null                      # Name of the book to use for Chess960.
     selection: "best_move"                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
   pybook:
@@ -22,7 +22,7 @@ engine:                                   # Engine settings.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     lichess_cloud:
-      enabled: false                       # Activate online moves from Lichess cloud eval.
+      enabled: true                       # Activate online moves from Lichess cloud eval.
       min_depth: 20                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
@@ -41,15 +41,12 @@ engine:                                   # Engine settings.
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 100                    # Increase if your bot flags games too often.
-    Threads: 3                            # Max CPU threads the engine can use.
-    Hash: 128                              # Max memory (in megabytes) the engine can allocate.
+    Threads: 4                            # Max CPU threads the engine can use.
+    Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     MultiPV: 1
     Skill Level: 20
     UCI_Elo : 2850
     ponder: true
-    Use NNUE: true
-    EvalFile: nn-6877cd24400e.nnue
-    SyzygyPath: "C:/Users/nimsi/Desktop/Chess/NimsiluBot/BotLi-main/engines/Syzygy"         # Path to your local syzygy endgame tablebases
     SyzygyProbeDepth: 100
     SyzygyProbeLimit: 7
     
@@ -95,4 +92,4 @@ matchmaking:
 
 
 books: 
-    lichess_torombot_2022-03-04: "./engines/lichess_torombot_2022-03-04.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.                  
+    lichess_torombot_2022-03-04: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.                  
