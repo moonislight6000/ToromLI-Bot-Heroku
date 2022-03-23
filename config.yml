@@ -55,7 +55,7 @@ challenge:                                # Incoming challenges. (Commenting all
   min_increment: 0                        # Minimum amount of increment to accept a challenge.
   max_increment: 0                        # Maximum amount of increment to accept a challenge.
   min_initial: 30                         # Minimum amount of initial time to accept a challenge.
-  max_initial: 60                         # Maximum amount of initial time to accept a challenge.
+  max_initial: 30                         # Maximum amount of initial time to accept a challenge.
   variants:                               # Chess variants to accept (https://lichess.org/variant).
     - standard
     - chess960
