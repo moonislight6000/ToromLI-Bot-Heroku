@@ -40,7 +40,6 @@ engine:                                   # Engine settings.
     score: -1000                          # If the score is less than or equal to this value, the bot resigns (in cp).
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
  uci_options:               # arbitrary UCI options passed to the engine
- 
 option name Contempt type spin : 24
 option name Analysis Contempt type combo : Both var Off var White var Black var Both
 option name Threads type spin : 20
@@ -60,7 +59,6 @@ option name SyzygyProbeDepth type spin : 100
 option name Syzygy50MoveRule type check : true
 option name SyzygyProbeLimit type spin : 7
 option name Use NNUE type check : true
-    
 
 #move_overhead_multiplier: 5.0             # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
     
