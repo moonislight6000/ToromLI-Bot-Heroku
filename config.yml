@@ -2,10 +2,10 @@ token: "lip_EXDoji9ulOKovlzkxo2J"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"               # Directory containing the engine.
-  name: "NimsiluEngine.exe"                      # Binary name of the engine to use.
+  name: "stockfish"                       # Binary name of the engine to use.
   ponder: true                            # Think on opponent's time.
   polyglot:
-    enabled: true                         # Activate polyglot book.
+    enabled: false                         # Activate polyglot book.
     books:
       white: null                         # Name of the book to use as white.
       black: null                         # Name of the book to use as black.
