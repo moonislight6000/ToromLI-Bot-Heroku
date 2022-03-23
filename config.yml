@@ -92,4 +92,4 @@ matchmaking:
 
 
 books: 
-    lichess_torombot_2022-03-04: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.                  
+    lichess-book: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.                  
