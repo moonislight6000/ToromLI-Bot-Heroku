@@ -22,8 +22,8 @@ engine:                                   # Engine settings.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     lichess_cloud:
-      enabled: false                       # Activate online moves from Lichess cloud eval.
-      min_depth: 20                       # Minimum evaluation depth.
+      enabled: true                       # Activate online moves from Lichess cloud eval.
+      min_depth: 100                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     online_egtb:
@@ -45,9 +45,9 @@ engine:                                   # Engine settings.
     Hash: 128                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     UCI_Elo : 2850
-    MultiPV: 17
+    MultiPV: 1
 
-move_overhead_multiplier: 20              # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 13              # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
