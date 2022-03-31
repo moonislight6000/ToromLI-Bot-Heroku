@@ -45,8 +45,8 @@ engine:                                   # Engine settings.
     Hash: 256                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     UCI_Elo : 2850
-    MultiPV: 1
-    Slow Mover: 40
+    MultiPV: 500
+    Slow Mover: 35
 
 move_overhead_multiplier: 5.0              # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
