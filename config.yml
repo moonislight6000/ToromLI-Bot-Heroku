@@ -17,7 +17,7 @@ engine:                                   # Engine settings.
     book: "/path/to/pybook"               # Path to pybook.
   online_moves:
     chessdb:
-      enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
+      enabled: true                      # Activate online moves from https://chessdb.cn/queryc_en/
       min_depth: 20                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
@@ -46,8 +46,9 @@ engine:                                   # Engine settings.
     Skill Level: 20
     UCI_Elo : 2850
     MultiPV: 1
+    Slow Mover: 40
 
-move_overhead_multiplier: 10.5              # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
+move_overhead_multiplier: 3.0              # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
 challenge:                                # Incoming challenges. (Commenting allowed)
   concurrency: 1                          # Number of games to play simultaneously.
