@@ -27,7 +27,7 @@ engine:                                   # Engine settings.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
     online_egtb:
-      enabled: true                      # Activate online endgame tablebases from Lichess.
+      enabled: false                      # Activate online endgame tablebases from Lichess.
       min_time: 10                       # Time the bot must have at least to use the online move.
       timeout: 3                          # Time the server has to respond.
   offer_draw:
@@ -41,11 +41,12 @@ engine:                                   # Engine settings.
     consecutive_moves: 5                  # How many moves in a row the score has to be below the resign value.
   uci_options:                            # Arbitrary UCI options passed to the engine. (Commenting allowed)
     Move Overhead: 200
-    Threads: 5                            # Max CPU threads the engine can use.
-    Hash: 300                             # Max memory (in megabytes) the engine can allocate.
+    Threads: 3                            # Max CPU threads the engine can use.
+    Hash: 136                             # Max memory (in megabytes) the engine can allocate.
     Skill Level: 20
     UCI_Elo : 2850
     MultiPV: 1
+    Slow Mover: 40
 
 move_overhead_multiplier: 3.0              # Increase if your bot flags games too often. Default move overhead is 1 second per 1 minute initital time.
 
@@ -80,8 +81,8 @@ challenge:                                # Incoming challenges. (Commenting all
 
 matchmaking:
   initial_time: 30                        # Initial time for matchmaking mode.
-  increment: 1                            # Increment time for matchmaking mode.
-  rated: false                             # Activate rated games in matchmaking mode.
+  increment: 0                            # Increment time for matchmaking mode.
+  rated: true                             # Activate rated games in matchmaking mode.
   timeout: 10                             # Time until a challenge is canceled. 
 # min_rating_diff: 0                      # Minimum rating distance to opponent. (Commenting allowed)
 # max_rating_diff: 300                    # Maximum rating distance to opponent. (Commenting allowed)
